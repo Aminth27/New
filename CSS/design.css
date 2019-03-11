@@ -1,0 +1,115 @@
+/* CSS Document for Screens */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i');
+
+body { font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 300; color: #555; margin: 0; padding: 0; }
+
+#page { max-width: 1200px; margin: 0 auto; position; relative; }
+
+/* Text */
+
+h1 { margin: 0 0 .9em 0; font-size: 2.8em; font-weight: 700; }
+h2 { margin: 0 0 .5em 0; font-size: 1.6em; font-weight: 700; line-height: 1.1em; }
+h3 { margin: 0 0 .5em 0; font-size: 1.3em; font-weight: 700; }
+h4 { margin: 0 0 1.5em 0; font-size: 1em; font-weight: 700; }
+
+p { margin: 0 0 1em; }
+
+a { color: #007eff; }
+a:visited { color: #65b1ff; } 
+
+a.btn { font-size: 1.2em; text-decoration: none; color: #fff; border: 1px solid #fff; padding: 6px 20px; ;  
+        transition: background-color .5s; margin: 0 0 0 130px; }
+a.btn:hover { background-color: rgba(0,0,0,.3); }
+
+/* Header */
+
+header { height: 430px; background: #cf0004 url(../images/Image.png) no-repeat center bottom;  position: relative; }
+
+header a.logo { 
+    z-index: 1;
+    position: absolute; 
+    display: block; width: 160px; height: 66px; 
+    background: url(../images/Logo.png) no-repeat 0 0; background-size: contain;
+    top: 15px; left: 15px; 
+}
+header a.logo span {display: none; }
+
+header div.hero { position: absolute; width:42%; top:130px; left: 57%; }
+header div.hero h1 { line-height: 1em; margin: 0 0 30 0; color: #fff; }
+header div.hero a { position: relative; top: -15px; }
+
+/* Section - All */
+
+section { padding: 0 30px; }
+section::after { content:''; display: block; clear: both; }
+
+/* Section - Part1 */
+
+section.part1 { margin-top: 20px; padding: 0; }
+section.part1 aside { width: 47%; height: 300px; 
+        float: left; text-align: center; margin: 15px; 
+        box-shadow: 0 5px 8px 0 grey;
+}
+
+section.part1 .content { margin: 15px ; background: no-repeat center top; background-size: 75px 75px; padding-top: 85px; transition: 0.75s; }
+section.part1 .content:hover { transform: scale(1.05); }
+section.part1 aside p a { color: #cc6633; }
+section.part1 aside p { margin: 10px 30px 0; transition: font-size 0.5s; }
+section.part1 aside p:hover { font-size: 16.5px; }
+
+section.part1 aside h3 a { color: rgb(12, 18, 92); text-decoration: none; transition: font-size , .5s ; }
+section.part1 aside h3 a:hover { text-decoration: underline; font-size: 25px; }
+
+section.part1 aside .content.trending { background-image: url(../images/icon_star.svg); }
+section.part1 aside .content.find-it { background-image: url(../images/Person.png); }
+
+/* Section - part2 */
+
+section.part2 { margin-bottom: 30px; padding: 0; }
+section.part2 aside { width: 47%; height: 300px; 
+        float: left; text-align: center; margin: 15px; 
+        box-shadow: 0 5px 8px 0 grey;
+}
+
+section.part2 .content { margin: 15px ; background: no-repeat center top; background-size: 75px 75px; padding-top: 85px; transition: 0.75s; }
+section.part2 .content:hover { transform: scale(1.05); }
+section.part2 aside p a { color: #cc6633; }
+section.part2 aside p { margin: 10px 30px 0; transition: font-size 0.35s; }
+section.part2 aside p:hover { font-size: 16.5px; }
+
+section.part2 aside h3 a { color: rgb(12, 18, 92); text-decoration: none; transition: color , font-size , .5s ; }
+section.part2 aside h3 a:hover { text-decoration: underline; font-size: 25px; }
+
+section.part2 aside .content.trending { background-image: url(../images/Bottom.png); }
+section.part2 aside .content.find-it { background-image: url(../images/Mind.png); }
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px) { 
+
+    h1 { font-size: 2.4em; }
+    
+    /* header */
+    
+    header.div.hero { left: 56%; }
+    header.div.hero h1 { margin-bottom: 20px; }
+    
+    /* Section - Atmosphere */
+    section.atmoshpere article { padding-left: 400px; background-size: 375px auto; }
+
+}
+
+@media screen and (max-width: 825px) { 
+
+    h1 { font-size: 2.2em; }
+    
+    /* header */
+    header { height: 300px; }
+    header.div.hero { top: 120px; left: 48%; }
+    header.div.hero h1 { margin-bottom: 20px; }
+    
+    /* Section - Atmosphere */
+    section.atmoshpere article { padding-left: 325px; background-size: 300px auto; }
+
+}
